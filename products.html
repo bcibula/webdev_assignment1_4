@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Products - Online Storefront</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Products Page</h1>
+        <h1>Our Products</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,12 +18,123 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h2>Product Listings Coming Soon...</h2>
-        <p>This page will display all of our products.</p>
+        <section id="filters">
+            <h2>Filter Products</h2>
+            <label for="price-range">Price Range:</label>
+            <select id="price-range">
+                <option value="all">All</option>
+                <option value="0-20">Under $20</option>
+                <option value="20-50">$20 - $50</option>
+                <option value="50+">Over $50</option>
+            </select>
+
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="fountain">Fountain Pens</option>
+                <option value="ballpoint">Ballpoint Pens</option>
+            </select>
+        </section>
+
+        <section id="featured-products">
+            <h2>Fountain Pens - Featured Collection</h2>
+            <p>Explore our exclusive selection of high-quality fountain pens at unbeatable prices.</p>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product">
+                    <div class="product-content">
+                        <img src="assets/images/pen1.jpg" alt="Fountain Pen 1">
+                        <div class="product-details">
+                            <h3>Fountain Pen 1</h3>
+                            <p>RRP: $29.99</p>
+                            <p>Price you pay: <strong>$19.99</strong></p>
+                            <p class="savings">Your savings: $10</p>
+                            <button onclick="location.href='cart.html'">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+    
+                <!-- Product 2 -->
+                <article class="product">
+                    <div class="product-content">
+                        <img src="assets/images/pen2.jpg" alt="Fountain Pen 2">
+                        <div class="product-details">
+                            <h3>Fountain Pen 2</h3>
+                            <p>RRP: $39.99</p>
+                            <p>Price you pay: <strong>$29.99</strong></p>
+                            <p class="savings">Your savings: $10</p>
+                            <button onclick="location.href='cart.html'">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+    
+                <!-- Product 3 -->
+                <article class="product">
+                    <div class="product-content">
+                        <img src="assets/images/pen3.jpg" alt="Fountain Pen 3">
+                        <div class="product-details">
+                            <h3>Fountain Pen 3</h3>
+                            <p>RRP: $49.99</p>
+                            <p>Price you pay: <strong>$34.99</strong></p>
+                            <p class="savings">Your savings: $15</p>
+                            <button onclick="location.href='cart.html'">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+    
+                <!-- Product 4 -->
+                <article class="product">
+                    <div class="product-content">
+                        <img src="assets/images/pen4.jpg" alt="Fountain Pen 4">
+                        <div class="product-details">
+                            <h3>Fountain Pen 4</h3>
+                            <p>RRP: $59.99</p>
+                            <p>Price you pay: <strong>$44.99</strong></p>
+                            <p class="savings">Your savings: $15</p>
+                            <button onclick="location.href='cart.html'">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+    
+                <!-- Product 5 -->
+                <article class="product">
+                    <div class="product-content">
+                        <img src="assets/images/pen5.jpg" alt="Fountain Pen 5">
+                        <div class="product-details">
+                            <h3>Fountain Pen 5</h3>
+                            <p>RRP: $69.99</p>
+                            <p>Price you pay: <strong>$54.99</strong></p>
+                            <p class="savings">Your savings: $15</p>
+                            <button onclick="location.href='cart.html'">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+    
+                <!-- Product 6 -->
+                <article class="product">
+                    <div class="product-content">
+                        <img src="assets/images/pen6.jpg" alt="Fountain Pen 6">
+                        <div class="product-details">
+                            <h3>Fountain Pen 6</h3>
+                            <p>RRP: $79.99</p>
+                            <p>Price you pay: <strong>$64.99</strong></p>
+                            <p class="savings">Your savings: $15</p>
+                            <button onclick="location.href='cart.html'">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+        
+    </main>
+    
     <footer>
         <p>&copy; 2024 Online Storefront</p>
     </footer>
 </body>
 </html>
+
